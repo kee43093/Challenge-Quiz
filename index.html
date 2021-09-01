@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Data/style.css" />
+    <title>Code Quiz</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Code Quiz</h1>
+      <p id="startQuiz">Click the start button to begin quiz!</p>
+      <h2 class="timer">Time: <span id="timer"></span></h2>
+    </header>
+
+    <div class="container">
+      <div id="question-container" class="hide">
+        <div id="question">Questions</div>
+        <div id="answer-btn" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+      <div class="controls"></div>
+      <button id="startBtn" class="start-btn btn">Start</button>
+      <button id="nextBtn" class="next-btn btn hide">Next</button>
+    </div>
+    
+    <div id="end-container" class="hide">
+      <div class="container end">
+       <div id=score-banner>
+           <h1>All done!</h1>
+       </div>  
+       <form id="initials-form" class="initials">
+         <p> Enter Initials:
+           <input type="text" name="initials" id="initials" class="text-input" />
+           <button class="btn startend" id="sumbit-score" type="submit">Submit</button> </p>
+         </form>
+       </div>
+   </div>
+
+    <div id="highscore" class="highScore">High Score:</div>
+    <div id="end-container" class="hide">
+      <div class="container end">
+       <div id=score-banner>
+           <h1>All done!</h1>
+       </div>  
+
+    <footer class="footer"></footer>
+    <script src="./Data/script.js"></script>
+  </body>
+</html>
+
+
+<!-- <div id="scoreCard" class="w3-container hide">
+
+  <div id="card2" class="w3-card-4">
+    
+    <header class="w3-container w3-light-grey">
+      <h1>Top 10 High Scores</h1>
+    </header>
+
+    <hr style="margin-top:0; border-color:transparent;">
+    <div id="leaderBoard" class="w3-container" style="min-height: 275px"></div>
+
+    <hr style="margin-top:0; border-color:transparent;">
+    <footer id="feedback2" class="w3-block w3-dark-grey">Thx for Playing</footer>
+  </div>
+
+  <button id="backBtn" type="button" class="btn">Go Back</button>
+  <button id="clearBtn" type="button" class="btn">Clear High Score</button>
+
+</div> -->
